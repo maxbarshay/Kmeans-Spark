@@ -1,0 +1,47 @@
+K_Means_Algorithm(D, k, eps)
+
+t = 0
+Randomly generate 3 tuples of length 4 with random floats. Possibly in the range of possible values
+
+repeat
+
+t = t +1
+
+Set C1 = C2 = C3 = empty (possibly a set since we need to add to this)
+
+One RDD for all the data
+
+
+for every observation in the data set:
+
+    take the vector distance between that observation and each mean vector
+    whichever mean vector is closest to our observation
+    assign observation to cluster corresponding to the mean vector
+
+
+(1,2,3,2,3,1,2,1).map( 1 => data).reduceByKey
+
+
+
+
+
+for each group (we have groups 1 to 3):
+
+    mean vector 1 = mean of all observations in C1
+
+
+
+done:
+3 new mean vectors
+
+
+
+Requirements:
+
+1. One File
+2. No Missing values
+3. All numeric measurements
+4. Actual labels
+
+
+
